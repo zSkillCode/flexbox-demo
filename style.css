@@ -1,0 +1,47 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ccc;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    background-color: #f1425d;
+    padding: 30px;
+    margin: 30px;
+    color: #fff;
+    font-size: 40px;
+
+   /* flex: 1; */
+}
+
+.item--2 {
+    height: 200px;
+
+   /*
+    flex-basis: 300px;
+    flex-shrink: 0;
+    */
+    flex: 0 1 300px;
+}
+
+.item--3 {
+    order: 1;
+    flex: 1;
+}
+
+.item--4 {
+    align-self: flex-end;
+    order: -1;
+}
